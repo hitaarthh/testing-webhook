@@ -13,7 +13,7 @@ EXPECTED_KEY_ID_PREFIX = "ee831110"
 
 # PEM Public Key as provided in subscription response
 PUBLIC_KEY_PEM = """-----BEGIN PUBLIC KEY-----
-MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE2J2jxaXO7f3ePAxvWSeGXx4MUqnxQQpsXLDWdLZV/8i0IRwz3zpDLrLQ4UQ4FAzg/ccLFBIfsfmc7aweJwFdQg=!
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE2J2jxaXO7f3ePAxvWSeGXx4MUqnxQQpsXLDWdLZV/8i0IRwz3zpDLrLQ4UQ4FAzg/ccLFBIfsfmc7aweJwFdQg==
 -----END PUBLIC KEY-----"""
 
 def verify_lucid_signature(header_value, body):
