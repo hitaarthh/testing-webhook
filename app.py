@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
@@ -11,4 +12,5 @@ def webhook():
     return jsonify({"status": "success"}), 200
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    port = int(os.getenv("PORT", 5000))
+    app.run(port=port, host="0.0.0.0")
